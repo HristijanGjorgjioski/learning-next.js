@@ -1,15 +1,10 @@
 import { server } from '../config/index';
 
-import Head from 'next/head'
 import ArticleList from '../components/ArticleList'
 
 export default function Home({ articles }) {
   return (
     <div>
-      <Head>
-        <title>First Next.js Application</title>
-        <meta name='keywords' content='web developmnet, programming' />
-      </Head>
       <ArticleList articles={articles} />
     </div>
   )
